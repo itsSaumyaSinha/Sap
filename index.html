@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            <svg width="250" height="80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Icon -->
+                <g transform="translate(30, 10) scale(1.5)">
+                <path d="M20.998 3V5C20.998 8.86599 17.864 12 13.998 12H12.998V13H17.998V20C17.998 21.1046 17.1026 22 15.998 22H7.99805C6.89348 22 5.99805 21.1046 5.99805 20V13H10.998V10C10.998 6.13401 14.1321 3 17.998 3H20.998ZM5.49805 2C8.02667 2 10.263 3.25136 11.6216 5.1686C10.6026 6.51084 9.99805 8.18482 9.99805 10V11H9.49805C5.35591 11 1.99805 7.64214 1.99805 3.5V2H5.49805Z" fill="#000000"/>
+                
+                <!-- Text -->
+                <text fill="#000000" font-size="40" font-family="Arial, Helvetica, sans-serif" font-weight="1000" x="70" y="15" dominant-baseline="middle" text-anchor="middle">Sap</text>
+              </svg>
+              
+        </div>
+        <div id="nav-part2">
+            <div id="links">
+                <a href="#">Shop</a>
+                <a href="#">Buy</a>
+                <a href="#">Donate</a>
+            </div>
+            <div id="icons">
+                <i class="ri-menu-fill"></i>
+                <i class="ri-shopping-cart-2-line"></i>
+            </div>
+        </div>
+    </div>
+    <div id="cursor"></div>
+    <div id="main">
+        <div id="page1">
+            <h1>CHANGE</h1>
+            <h1>THE COURSE</h1>
+            <div id="video-container">
+                <div id="play">Play</div>
+                <video autoplay loop muted src="./video.mp4"></video>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="elem1" class="elem">
+                <img data-scroll data-scroll-speed="1" src="pic1.jpg">
+                <a href="#buy-now" data-scroll data-scroll-speed="-1" class="buy-now-link">Face Enhancer</a>
+            </div>
+            <div id="elem2" class="elem">
+                <img data-scroll data-scroll-speed="1" src="pic2.jpg">
+                <a href="#buy-now" data-scroll data-scroll-speed="-1" class="buy-now-link">Beauty Repair</a>
+            </div>
+            <div id="elem3" class="elem">
+                <img data-scroll data-scroll-speed="1" src="pic3.jpg">
+                <a href="#buy-now" data-scroll data-scroll-speed="-1" class="buy-now-link">Skin Glow</a>
+            </div>
+        </div>
+        
+               
+        </div>
+        <div id="page3">
+            <p1>WE BELIEVE IN PEOPLE, <br/>
+                UNTIL THEY BELIEVE IN THEMSELVES AGAIN.</p1>
+            <p2>
+                Everything we do is designed to rebuild self worth and independence, in order to break free from the cycle of disadvantage.<br/>
+                With every purchase you make with us, you're helping to change the course of someone's life; you're walking alongside vulnerable women as they find their way home again.
+            </p2>
+        </div>
+        <div id="page4">
+            <div class="child" id="child1">
+                <img src="pic4.jpg">
+                <a href="#buy-now" data-scroll data-scroll-speed="-1" class="click">LIPSTICK</a>
+            </div>
+            <div class="child" id="child2">
+                <img src="pic5.jpg">
+                <a href="#buy-now" data-scroll data-scroll-speed="-1" class="click">MASCARA</a>
+            </div>
+            <div class="child" id="child3">
+                <img src="pic6.jpg">
+                <a href="#buy-now" data-scroll data-scroll-speed="-1" class="click">LINERS</a>
+            </div>
+            <div class="child" id="child4">
+                <img src="pic7.jpg">
+                <a href="#buy-now" data-scroll data-scroll-speed="-1" class="click">GLOSS</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <p1>Copyright © 2022 Sap - Makeup Product | All Rights Reserved. </p1>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

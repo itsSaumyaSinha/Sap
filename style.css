@@ -1,0 +1,459 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    color:white;
+    background-color: rgb(141, 214, 245);
+}
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#nav{ 
+width:100%;
+position: fixed;
+display: flex;
+z-index: 30;
+background-color: white;
+opacity: 0.7;
+align-items: flex-start;
+justify-content:right;
+padding: 9px;
+overflow: hidden;}
+
+#nav #logo{
+    position: fixed;
+    left:10px;
+    top:25px;
+}
+
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links{
+    padding:10px;
+ }
+
+#nav #nav-part2 #links a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    margin:0 20px;
+    
+}
+
+#icons{
+    padding:10px;
+    border-radius:50px ;
+    background-color: white;
+
+}
+
+#nav #nav-part2 #icons i{
+    text-decoration: none;
+    color: #333;
+    font-weight: 100;
+    font-size: 18px;
+    margin:0 20px;
+    opacity:1;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    
+}
+#cursor {
+    height: 100px;
+    width: 100px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    pointer-events: none; }
+
+#page1{
+    min-height: 70vh;
+    position:relative;
+    width:100%;
+    padding: 0 -1.5vw;
+    padding-top:18vh;
+   
+}
+#page1 h1{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 12vw;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    line-height: 12vw;
+    letter-spacing: -15px;
+    font-style: normal;
+  }
+  
+#video-container{
+    height: 70vh;
+    width: 100%;
+    background-color:rgb(9, 8, 8);
+    position: relative;
+}
+
+#video-container video{
+    padding-top: 5px;
+    height: 99%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding: 2.3vw;
+    background-color: black;
+    font-size: 1.3vw;
+    color: white;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50%;
+    opacity: 1;
+    scale: 1;
+    
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+}
+
+#page2 .elem {
+    height: 100%;
+    width: 31%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img {
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+}
+
+#page2 .buy-now-link {
+    color: rgb(0, 0, 0); /* Text color */
+    text-decoration: none; /* No underline */
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 30px; /* Padding for the white box */
+    border-radius: 20px; /* Rounded corners */
+    font-family: "Radley", serif; /* Font family */
+    background-color: rgb(255, 255, 255); /* White background */
+    position: absolute;
+    z-index: 10;
+    bottom: 40%; /* Positioned above the bottom edge */
+    left: 40%;
+    transform: translateX(-50%); /* Center horizontally */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    cursor: pointer;
+}
+
+#page2 .buy-now-link:hover {
+    background-color: rgb(0, 0, 0); /* Slightly different hover background */
+    color:white;
+    transform: translate(-50%, -10%) scale(1.1); /* Hover with upward and scaling effect */
+    height: 40px;
+}
+
+
+#page3{
+    height: 50vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+#page3 p1{
+   font-size: 50px;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-family: "Radley", serif;
+   font-weight: 400;
+   font-style: italic;
+   padding-left: 40px;
+
+}
+#page3 p2{
+    justify-content: end;
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-size:20px;
+    font-style: italic;
+    padding-right: 20px;
+    padding-left:20px;
+}
+
+#page4 {
+    min-height: 120vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child {
+    height: 55vh;
+    width: 40vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img {
+    height: 100%;
+}
+
+.click {
+    position: absolute;
+    font-family: "Radley", serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.click::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(135deg, #000000, #fcfcfc);
+    border-radius: 20px;
+    z-index: -1;
+    filter: blur(8px);
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background-color: #181515;
+    min-height: 300px;
+    height: 30px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+footer .social_icon,footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+footer .social_icon li,footer .menu li{
+    list-style: none;
+    margin-top:30px;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    margin: 0 10px;
+    display: inline-block;
+    transition:0.5s;
+    color: rgb(255, 255, 255);
+}
+
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: #f7f7f7;
+    margin: 2px 8px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.8;
+    transition:0.5s;
+    font-family: "Radley", serif;
+}
+
+footer .menu li a:hover
+{opacity:1;}
+
+footer p1{
+    color: rgb(193, 194, 196);
+    text-align: center;
+    margin-top:10px;
+    font-size: 1.1em;
+    font-family: "Radley", serif;
+}
+
+footer .wave{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size:1000px 150px;
+}
+
+footer .wave#wave1{
+    z-index:500;
+    opacity: 0.1;
+    bottom:8px;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2
+{
+     z-index: 990;
+     opacity: 0.1;
+     bottom: 8px;
+     animation: animateWave_02 4s linear infinite;
+
+}
+footer .wave#wave3
+{
+     z-index: 900;
+     opacity: 0.2;
+     bottom: 8px;
+     animation: animateWave 4s linear infinite;
+
+}
+footer .wave#wave4
+{
+     z-index: 899;
+     opacity: 0.7;
+     bottom: 8px;
+}
+
+@keyframes animateWave{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x:1000px;
+    }
+}
+
+
+
+@media (max-width:800px) {
+    #page1{
+        min-height: 20vh;
+        width:100%;
+        padding: 0 0.5vw;
+        padding-top:25vh
+        
+    }
+    #page1 h1{
+        font-size: 16vw;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        letter-spacing: -3px;
+      }
+      #nav #logo{
+        left:-25px;
+        top:10px;
+    }
+    
+      #video-container{
+        height: 60vh;
+        width: 100%;
+        background-color:white;
+        margin-top: 3vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #video-container #play{
+        padding: 9.7vw 7.5vw;
+        font-size: 4.3vw;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        border-radius: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+    }
+
+    #page2
+{
+    min-height: 280vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5vw 3vw;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#page2 .elem
+{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 3vw;
+}
+#page2 .elem img{
+    padding-top: 50px;
+    height: 100%;
+    width:100%;
+    padding: 20px;
+    object-fit: cover;
+    scale: 1.2;
+}
+}
+
